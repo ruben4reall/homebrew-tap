@@ -1,6 +1,6 @@
 cask "pli" do
-  version "0.9.0"
-  sha256 "b068791181017153de44a7c0b7527a04bb27445a897a09ac27ea38707655ceee"
+  version "1.0.0"
+  sha256 "506921b0ae25cf5a7de48dadc848e0da33b5d86954e0a951c7b407e6ed3c23d5"
 
   url "https://github.com/ruben4reall/pli/releases/download/v#{version}/Pli-#{version}.dmg"
   name "Pli"
