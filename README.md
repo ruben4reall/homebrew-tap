@@ -1,11 +1,14 @@
 # Homebrew tap
 
-Casks for [Pli](https://getpli.vercel.app), the iPhone Duo fold on your MacBook.
+Casks for Ruben Catalao's Mac apps.
 
-```sh
-brew install --cask ruben4reall/tap/pli
-```
+| App | Install |
+|---|---|
+| [Islet](https://getislet.vercel.app), the notch, made useful | `brew install --cask ruben4reall/tap/islet` |
+| [Pli](https://getpli.vercel.app), the iPhone Duo fold on your MacBook | `brew install --cask ruben4reall/tap/pli` |
 
-Pli updates itself through Sparkle; `brew upgrade --cask --greedy pli` works too. Source and issues: [ruben4reall/pli](https://github.com/ruben4reall/pli).
+Both update themselves through Sparkle; `brew upgrade --cask --greedy <name>` works too. Islet's cask also links the
+`islet` command. Source and issues: [ruben4reall/islet](https://github.com/ruben4reall/islet),
+[ruben4reall/pli](https://github.com/ruben4reall/pli).
 
-Pli is not affiliated with Apple.
+Islet and Pli are not affiliated with Apple.
