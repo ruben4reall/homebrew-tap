@@ -1,6 +1,6 @@
 cask "souffleur" do
-  version "1.3.0"
-  sha256 "90d0e502bc5e2de8171fc6920aa494b1c2ddc9d4ec5d31668cfd3b7b7c142332"
+  version "1.3.1"
+  sha256 "bb346660af5d128212b2eb187f691702f399bb4cfa84edb1a785d1a462538221"
 
   url "https://github.com/ruben4reall/souffleur/releases/download/v#{version}/Souffleur-#{version}.dmg"
   name "Souffleur"
