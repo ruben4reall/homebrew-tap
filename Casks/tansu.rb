@@ -1,6 +1,6 @@
 cask "tansu" do
-  version "1.0.0"
-  sha256 "49fb098bca0e40e339e967fd98a9ee7da42c65d7ef266d1f168208c42aa62704"
+  version "1.0.1"
+  sha256 "0dea8f9ec4f17c3ab2cb6adaaeea5bb0d274bba593a50521da951c2b57ffdcb6"
 
   url "https://github.com/ruben4reall/tansu/releases/download/v#{version}/Tansu-#{version}.dmg"
   name "Tansu"
