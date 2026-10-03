@@ -12,6 +12,8 @@ cask "souffleur" do
     strategy :sparkle, &:short_version
   end
 
+  deprecate! date: "2026-10-03", because: "is now the prompter of Col", replacement_cask: "col"
+
   auto_updates true
   depends_on macos: :sonoma
 

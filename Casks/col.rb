@@ -1,0 +1,34 @@
+cask "col" do
+  version "2.0.0"
+  sha256 "d298567a2b594b1794418aa3c72644dc6c37f5fb07f1a3ecc9a0b6d2d0c4e4e8"
+
+  url "https://github.com/ruben4reall/col/releases/download/v#{version}/Col-#{version}.dmg"
+  name "Col"
+  desc "Dynamic Island for the MacBook notch"
+  homepage "https://getcol.vercel.app/"
+
+  livecheck do
+    url "https://getcol.vercel.app/appcast.xml"
+    strategy :sparkle, &:short_version
+  end
+
+  auto_updates true
+  depends_on macos: :sonoma
+
+  app "Col.app"
+  binary "#{appdir}/Col.app/Contents/Helpers/colctl"
+  # The command's name before 2.0: scripts and hooks written for Islet still call it.
+  binary "#{appdir}/Col.app/Contents/Helpers/colctl", target: "islet"
+
+  uninstall quit: "ch.rubencatalao.islet"
+
+  zap trash: [
+    "~/Library/Application Support/Col",
+    "~/Library/Application Support/Islet",
+    "~/Library/Caches/ch.rubencatalao.islet",
+    "~/Library/Caches/Col",
+    "~/Library/Caches/Islet",
+    "~/Library/HTTPStorages/ch.rubencatalao.islet",
+    "~/Library/Preferences/ch.rubencatalao.islet.plist",
+  ]
+end
