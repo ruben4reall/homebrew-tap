@@ -1,6 +1,6 @@
 cask "postern" do
-  version "0.1.0"
-  sha256 "03ece819fb961534fa2dd16492d853dfac5e3187254436ce5ab182fbd4965a89"
+  version "0.1.1"
+  sha256 "244db92bfe33c7281f56221d18ee64a0225b750e58fe2a091151b62ef5d09952"
 
   url "https://github.com/ruben4reall/postern/releases/download/v#{version}/Postern-#{version}.dmg"
   name "Postern"
@@ -8,10 +8,11 @@ cask "postern" do
   homepage "https://getpostern.vercel.app/"
 
   livecheck do
-    url :url
-    strategy :github_latest
+    url "https://getpostern.vercel.app/appcast.xml"
+    strategy :sparkle, &:short_version
   end
 
+  auto_updates true
   depends_on macos: :tahoe
 
   app "Postern.app"
@@ -20,8 +21,10 @@ cask "postern" do
             quit:      "ch.rubencatalao.postern"
 
   zap trash: [
+    "~/Library/Caches/ch.rubencatalao.postern",
     "~/Library/Containers/ch.rubencatalao.postern",
     "~/Library/Containers/ch.rubencatalao.postern.parser",
+    "~/Library/HTTPStorages/ch.rubencatalao.postern",
     "~/Library/Preferences/ch.rubencatalao.postern.plist",
   ]
 end
