@@ -1,6 +1,6 @@
 cask "postern" do
-  version "0.1.1"
-  sha256 "244db92bfe33c7281f56221d18ee64a0225b750e58fe2a091151b62ef5d09952"
+  version "0.2.0"
+  sha256 "fe4eb0df59567e6438f4ce9bc4412f14ff573ed8297ad2bbc5be06e0c172e44b"
 
   url "https://github.com/ruben4reall/postern/releases/download/v#{version}/Postern-#{version}.dmg"
   name "Postern"
