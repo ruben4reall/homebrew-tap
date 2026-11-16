@@ -1,6 +1,6 @@
 cask "col" do
-  version "2.0.0"
-  sha256 "d298567a2b594b1794418aa3c72644dc6c37f5fb07f1a3ecc9a0b6d2d0c4e4e8"
+  version "3.0.0"
+  sha256 "5a5106ea096ea43a1d952175ef9f5b686de11490ad3c2ed002db397609a7bcde"
 
   url "https://github.com/ruben4reall/col/releases/download/v#{version}/Col-#{version}.dmg"
   name "Col"
